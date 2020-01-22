@@ -7,9 +7,10 @@ import colors from 'res/colors';
 import palette from 'res/palette';
 import MainScreen from './MainScreen';
 import OtherScreen from './OtherScreen';
+import HomeNavigator from './home/HomeNavigator';
 
 const routeConfig = {
-  Home: createStackNavigator({ Home: MainScreen }),
+  Home: HomeNavigator,
   Search: createStackNavigator({ Search: OtherScreen }),
   AddPost: createStackNavigator({ AddPost: MainScreen }),
   Activity: createStackNavigator({ Activity: OtherScreen }),
