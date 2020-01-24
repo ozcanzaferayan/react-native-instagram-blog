@@ -9,6 +9,7 @@ import { createStackNavigator } from 'react-navigation-stack';
 import images from 'res/images';
 import palette from 'res/palette';
 import HomeScreen from './HomeScreen';
+import StoryScreen from './story/StoryScreen';
 
 
 const HomeNavigator = createStackNavigator({
@@ -35,8 +36,14 @@ const HomeNavigator = createStackNavigator({
         </View>
       ),
     })
+  },
+  Story: {
+    screen: StoryScreen,
+    navigationOptions: ({ navigation }) => ({
+      ...palette.header
+    })
   }
-});
+}, { initialRouteName: 'Home' });
 
 const styles = StyleSheet.create({
   headerLeftContainer: { ...palette.header.headerLeftContainer },
