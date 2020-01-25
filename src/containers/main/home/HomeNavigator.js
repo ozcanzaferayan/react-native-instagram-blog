@@ -17,10 +17,9 @@ const HomeNavigator = createStackNavigator({
     screen: HomeScreen,
     navigationOptions: ({ navigation }) => ({
       ...palette.header,
-      headerTitle: '',
       headerLeft: () => (
         <View style={styles.headerLeftContainer}>
-          <TouchableOpacity onPress={() => navigation.navigate('StoryCamera', { transition: 'toLeft' })}>
+        <TouchableOpacity onPress={() => navigation.navigate('StoryCamera', { transition: 'toLeft' })}> 
             <Image style={styles.headerLeftImage} source={images.photo_camera} />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => navigation.navigate('Info')}>

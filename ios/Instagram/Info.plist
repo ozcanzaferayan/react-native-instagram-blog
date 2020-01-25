@@ -53,5 +53,8 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>NSCameraUsageDescription</key>        
+<string>${PRODUCT_NAME} uygulaması hikaye çekmek için kamera iznine ihtiyaç duyar.</string>
+<key>NSMicrophoneUsageDescription</key>        <string>${PRODUCT_NAME} uygulaması hikayede ses kaydetmek için kamera iznine ihtiyaç duyar.</string>
 </dict>
 </plist>
