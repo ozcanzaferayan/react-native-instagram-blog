@@ -8,13 +8,17 @@ import palette from 'res/palette';
 import MainScreen from './MainScreen';
 import OtherScreen from './OtherScreen';
 import HomeNavigator from './home/HomeNavigator';
+import SearchNavigator from './search/SearchNavigator';
+import AddPostNavigator from './addPost/AddPostNavigator';
+import ActivityNavigator from './activity/ActivityNavigator';
+import ProfileNavigator from './profile/ProfileNavigator';
 
 const routeConfig = {
   Home: HomeNavigator,
-  Search: createStackNavigator({ Search: OtherScreen }),
-  AddPost: createStackNavigator({ AddPost: MainScreen }),
-  Activity: createStackNavigator({ Activity: OtherScreen }),
-  Profile: createStackNavigator({ Profile: MainScreen }),
+  Search: SearchNavigator,
+  AddPost: AddPostNavigator,
+  Activity: ActivityNavigator,
+  Profile: ProfileNavigator,
 };
 
 const navigatorConfig = {
