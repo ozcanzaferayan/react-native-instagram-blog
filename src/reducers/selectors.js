@@ -1,0 +1,1 @@
+export const getMessages = (state, binId) => state.binId
