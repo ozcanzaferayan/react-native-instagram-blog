@@ -11,12 +11,12 @@ import { loadMessages } from 'actions';
 const DmScreen = (props) => {
   const binId = '1herpk';
 
-  // useEffect(() => {
-  //   async function loadMessages() {
-  //     await props.loadMessages(binId);
-  //   }
-  //   loadMessages();
-  // }, []);
+  useEffect(() => {
+    async function loadMessages() {
+      await props.loadMessages(binId);
+    }
+    loadMessages();
+  }, []);
 
   onRefresh = () => {
     props.loadMessages(binId);
